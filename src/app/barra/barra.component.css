@@ -1,0 +1,35 @@
+.nav-categories {
+  overflow-x: scroll;
+}
+
+.nav-list-categories {
+  list-style: none;
+  white-space: nowrap!important;
+}
+
+.nav-list-categories-item {
+  position: initial;
+}
+
+.nav-list-categories-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+
+@media (min-width: 768px) { 
+
+
+    .nav-categories {
+      overflow-x: auto;
+    }
+    .nav-list-categories {
+      white-space: normal!important;
+    }
+}
+
+ul{
+    background-color: rgb(254, 215, 0)
+}
