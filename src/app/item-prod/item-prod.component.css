@@ -1,0 +1,22 @@
+
+.title {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title a:hover {
+	color: #339;
+}
+
+article {
+	height: 250px;
+    width: 180px;
+	border: 1px solid darkslategray;
+	border-radius: 7px;
+    flex-direction: column;
+}
+
+.photo{
+	height: 154px;
+}
+
+

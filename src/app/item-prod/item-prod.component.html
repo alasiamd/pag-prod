@@ -1,0 +1,21 @@
+<div class="row p-4">
+  <article class="m-3 d-flex" *ngFor="let producto of productos">
+    <div class="author text-center fw-bolder fs-6">
+        <span> 
+            {{'$'+producto.precio}}
+        </span>
+      </div>
+    <section class="photo p-2">
+      <div>
+        <img src="{{producto.imagen}}" class="w-100" />
+      </div>
+    </section>
+    <section class="entry">
+      <div class="title fs-9 text-dark">
+        <span>
+            {{producto.titulo}}
+        </span>
+      </div>    
+    </section>
+  </article>
+</div>

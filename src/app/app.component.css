@@ -1,9 +1,9 @@
-nav{
-    background-color: rgb(254, 215, 0)
+#contenido{
+    height: 500px;
+    border: 1px solid darkslategray;
 }
-section{
-    background-color: rgb(254, 215, 0)
-}
-.row{
-    width: 260px;
+#barra{
+    height: 500px;
+    width: 200px;
+    background-color: rgb(254, 215, 0);
 }

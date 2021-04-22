@@ -1,9 +1,15 @@
 <div class="container  p-0 m-0 ">
     <app-header></app-header>
-    <div class="container  p-0 ">
-        <div class="row  float-left">
+    <div class="container p-0 m-0 b-5" id="contenido">
+        <div class="row  float-start" id="barra">
             <app-barra ></app-barra>
         </div>
+        <div class="d-inline-block">
+            <app-item-prod></app-item-prod>
+        </div>   
         <router-outlet></router-outlet>
     </div>
 </div>
+<!--<div id="contenido "  >
+    <app-item-prod></app-item-prod>
+</div>-->
