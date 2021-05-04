@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import { Producto } from '../models/producto';
+import { ProdService } from '../services/prod.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-item-prod',
@@ -10,30 +13,17 @@ import { Producto } from '../models/producto';
 export class ItemProdComponent implements OnInit {
 
   productos: Producto[] = [];
+  //idProd: string = '';
 
-  constructor() { }
+
+  constructor(public prodService: ProdService) { }
 
   ngOnInit(): void {
-    this.productos = [
-      {
-        id: 1,
-        titulo: 'Cloudbook PcBox Fire PCB-GLW1 ',
-        precio: 54000,
-        imagen:'../../assets/PcBox.png'
-      },
-      {
-        id: 2,
-        titulo: 'Cpu AMD Ryzen 5 2400G',
-        precio: 49000,
-        imagen:'../../assets/20170427.jpg'
-      },
-      {
-        id: 3,
-        titulo: 'Cpu Gamer Amd Ryzen 3 3200G',
-        precio: 62000,
-        imagen:'../../assets/GSF.jpg'
-      }
-    ]
+    this.productos = this.prodService.getProductos();
   }
+
+  //verProd(producto: Producto){
+  //  this.idProd = producto.precio.toString();
+  //}
 
 }
