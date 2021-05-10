@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { ProdService } from '../services/prod.service';
+import { IProducto } from '../models/interfaces/iproducto';
 import { Producto } from '../models/producto';
 
 @Component({
@@ -11,11 +12,9 @@ import { Producto } from '../models/producto';
 })
 export class ItemsProdComponent implements OnInit {
 
-  productos: Producto[] = [];
-  producto: Producto[] = [];
-  
-
-  idProd:Producto[] = [];
+  public productos: Producto[] = [];
+ 
+  idProd:number = 0;
 
   constructor( public prodService: ProdService,private rutaActiva: ActivatedRoute ) { }
 
@@ -23,10 +22,11 @@ export class ItemsProdComponent implements OnInit {
     this.productos = this.prodService.getProductos();
 
     this.idProd = this.rutaActiva.snapshot.params.idProd;
-    console.log(this.idProd);
 
-    //var producto = this.productos.filter(productos => productos.id === this.idProd );    
+    //this.producto = this.productos.filter(productos => productos.id === this.idProd );    
     //this.producto = this.prodService.getProducto();
   }
+
+
 
 }

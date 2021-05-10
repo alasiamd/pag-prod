@@ -19,19 +19,22 @@ export class ProdService {
         id: 1,
         titulo: 'Cloudbook PcBox Fire PCB-GLW1 ',
         precio: 54000,
-        imagen:'../../assets/PcBox.png'
+        imagen:'../../assets/PcBox.png',
+        descripcion:'Celeron N4000/4GB/Almac.64GB/Pant.14.1/Windows 10'
       },
       {
         id: 2,
         titulo: 'Cpu AMD Ryzen 5 2400G',
         precio: 49000,
-        imagen:'../../assets/20170427.jpg'
+        imagen:'../../assets/20170427.jpg',
+        descripcion:'8Gb ddr4/Ssd 240Gb/Radeon V11 - Gabinete c/Kit - Garantia:1 año'
       },
       {
         id: 3,
         titulo: 'Cpu Gamer Amd Ryzen 3 3200G',
         precio: 62000,
-        imagen:'../../assets/GSF.jpg'
+        imagen:'../../assets/GSF.jpg',
+        descripcion:'8Gb ddr4/Ssd 240Gb/Radeon V11 - Gabinete c/Kit - Garantia:1 año'
       }
     ]
 

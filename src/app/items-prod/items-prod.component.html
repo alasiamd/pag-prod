@@ -1,3 +1,59 @@
-<div>
-    
+<div class="w-75 border border-primary h-100 float-start">
+    <article class="m-3 " *ngFor="let producto of productos">
+        <ng-container *ngIf="producto.id == idProd">
+            
+            <div class="title fs-9 text-dark w-100">
+                    <h1>
+                        {{producto.titulo}}
+                    </h1>
+            </div>    
+            <div class="container" id="imgPrecio">
+                <div class="float-start w-50">
+                    <section class=" p-2">
+                        <div class="float-start w-50"></div>
+                        <div class=" w-50 photo float-end">
+                            <img src="{{producto.imagen}}" class=" photo" />
+                        </div>
+                    </section>
+                </div>
+                <div class="author text-center fw-bolder fs-6 float-end w-50 ">
+                    <div id="espVert"></div>
+                    <h3>
+                        {{producto.precio|currency }}
+                    </h3>
+                    <h6>
+                        Precio contado.
+                    </h6><br>
+                    
+                    
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="h6" [routerLink]="">
+                                Click para ver financiación
+                            </a>
+                        </li>
+                        <li>
+                            <a class="h6" [routerLink]="">
+                                Promos vigentes con MercadoPago
+                            </a>
+                        </li>
+                    </ul>
+
+                  </div>
+            </div>
+            <section class="mt-5">
+                <p>
+                    {{producto.descripcion }}
+                </p>
+            </section>
+        </ng-container>
+    </article>
 </div>
+
+<div class="w-25 border border-warning h-100 float-end">
+
+</div>
+
+
+

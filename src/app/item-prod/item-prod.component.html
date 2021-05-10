@@ -1,6 +1,6 @@
   <div class="row p-4">
     <article class="m-3 d-flex" *ngFor="let producto of productos">
-        <a [routerLink]="'/prod/' + producto">
+        <a [routerLink]="'/prod/' + producto.id">
       <div class="author text-center fw-bolder fs-6">
           <span> 
               {{producto.precio|currency }}
